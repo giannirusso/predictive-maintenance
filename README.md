@@ -30,6 +30,11 @@ will_fail_within_horizon = 1 if failure is expected within N cycles.
 python src/data/make_dataset.py
 ```
 
+### 3. Build rolling-window features
+```bash
+python src/features/build_features.py
+```
+
 ## Architecture Overview
 
 The system follows an offline training and online inference pattern:
