@@ -69,3 +69,37 @@ curl -X POST "http://localhost:8000/predict" \
 docker build -t pm-api .
 docker run -p 8000:8000 pm-api
 ```
+
+
+## Quickstart (End-to-End)
+
+
+# 1) Download dataset
+```bash
+python src/data/download_cmapps.py
+```
+
+# 2) Build labeled dataset (RUL + binary target)
+```bash
+python src/data/make_dataset.py
+```
+
+# 3) Build rolling-window features
+```bash
+python src/features/build_features.py
+```
+
+# 4) Train baseline model + save artifacts
+```bash
+python src/models/train.py
+```
+
+# 5) Run API
+```bash
+uvicorn app.main:app --reload
+```
+
+# Generate a ready-to-send request payload:
+```bash
+python src/inference/make_payload.py --engine-id 1 --out payload.json
+```
