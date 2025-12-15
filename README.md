@@ -16,6 +16,14 @@ This repository will include:
 - model training and evaluation (ROC-AUC, F1, Recall)
 - inference API (`/predict`) and containerized deployment
 
+## Architecture Overview
+
+The system follows an offline training and online inference pattern:
+- historical sensor data is used to build time-window features
+- a binary classifier predicts failure risk within a fixed horizon
+- the trained model is loaded by a FastAPI service for real-time inference
+
+
 ## API
 ### Endpoints
 - `GET /health`
