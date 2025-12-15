@@ -35,6 +35,14 @@ python src/data/make_dataset.py
 python src/features/build_features.py
 ```
 
+## Training & Evaluation
+
+Train a baseline classifier (Logistic Regression) using group-based split by `engine_id` to prevent leakage:
+
+```bash
+python src/models/train.py
+```
+
 ## Architecture Overview
 
 The system follows an offline training and online inference pattern:
