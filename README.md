@@ -5,6 +5,8 @@
 ![API](https://img.shields.io/badge/API-FastAPI-green)
 ![Task](https://img.shields.io/badge/Task-Predictive%20Maintenance-brightgreen)
 ![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
+![CI](https://github.com/<YOUR_GITHUB_USERNAME>/predictive-maintenance/actions/workflows/ci.yml/badge.svg)
+
 
 # predictive-maintenance
 Binary classification project: predict whether an engine will fail within the next **N cycles** using sensor time-series data (NASA C-MAPSS). The model will be served via **FastAPI** and packaged with **Docker**.
