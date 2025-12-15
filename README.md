@@ -26,6 +26,9 @@ python src/data/download_cmapps.py
 ### 2. Build training dataset + labels
 This step computes RUL and creates a binary target:
 will_fail_within_horizon = 1 if failure is expected within N cycles.
+```bash
+python src/data/make_dataset.py
+```
 
 ## Architecture Overview
 
