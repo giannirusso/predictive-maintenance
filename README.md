@@ -16,6 +16,17 @@ This repository will include:
 - model training and evaluation (ROC-AUC, F1, Recall)
 - inference API (`/predict`) and containerized deployment
 
+## Data Preparation (NASA C-MAPSS)
+
+### 1. Download dataset
+```bash
+python src/data/download_cmapps.py
+```
+
+### 2. Build training dataset + labels
+This step computes RUL and creates a binary target:
+will_fail_within_horizon = 1 if failure is expected within N cycles.
+
 ## Architecture Overview
 
 The system follows an offline training and online inference pattern:
