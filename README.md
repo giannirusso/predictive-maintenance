@@ -105,3 +105,10 @@ uvicorn app.main:app --reload
 ```bash
 python src/inference/make_payload.py --engine-id 1 --out payload.json
 ```
+
+
+## Quick Demo
+
+```bash
+make demo
+```
