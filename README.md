@@ -4,7 +4,7 @@
 ![Docker](https://img.shields.io/badge/Docker-Ready-success)
 ![API](https://img.shields.io/badge/API-FastAPI-green)
 ![Task](https://img.shields.io/badge/Task-Predictive%20Maintenance-brightgreen)
-![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
+![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen)
 ![CI](https://github.com/giannirusso/predictive-maintenance/actions/workflows/ci.yml/badge.svg)
 
 
